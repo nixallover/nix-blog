@@ -1,0 +1,26 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'div'>;
+
+const { class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const subpath = pathname.match(/[^\/]+/g);
+---
+
+<div class="wrapper">
+	<slot />
+</div>
+<style>
+	.wrapper {
+		display: flex;
+		color: red;
+	}
+	.wrapper > * {
+		width: 50%;
+	}
+	.wrapper > * + * {
+		margin-right: 2rem;
+	}
+</style>
