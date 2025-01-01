@@ -12,15 +12,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <Header />
-    <main>
-      <img
-        src="/hey-im-nicole.png"
-        width={720}
-        height={360}
-        alt="Hey I'm Nicole"
-      />
-      <div class="flex">
-        <img src="/nicole-thinking.png" width={250} alt="Hey I'm Nicole" />
+    <main class="flex flex-col items-center space-y-8">
+      <img src="/hey-im-nicole.png" width={720} alt="Hey I'm Nicole" />
+      <div class="flex items-start space-x-4">
+        <img
+          src="/nicole-thinking.png"
+          width={250}
+          class=""
+          alt="Hey I'm Nicole"
+        />
         <div>
           <h4>
             I’m a product manager, software engineer and illustrator based in
