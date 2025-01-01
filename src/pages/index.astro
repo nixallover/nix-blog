@@ -1,19 +1,55 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <img
+        src="/hey-im-nicole.png"
+        width={720}
+        height={360}
+        alt="Hey I'm Nicole"
+      />
+      <div>
+        <img src="/nicole-thinking.png" width={250} alt="Hey I'm Nicole" />
+        <div>
+          <p>
+            <strong>
+              I’m a product manager at Nx, software engineer and illustrator
+              based out of California.
+            </strong>
+          </p>
+          <p>
+            At university, I trained in drawing and painting, and aspired to
+            become a professional illustrator. I still draw as a hobby and
+            illustrate some technical topics, which I think is a fun and
+            effective way to democratize complex topics.
+          </p>
+          <p>
+            I’ve always had an affinity for computers and the web. For most of
+            the last decade I’ve focused on creating intuitive experiences for
+            the web as a software engineer. I’ve often worked on small scrappy
+            teams where every developer wore many hats, and I’ve also consulted
+            with large organizations such as Nintendo and T-Mobile, where teams
+            are often quite specialized.
+          </p>
+          <p>
+            In the last year, I’ve changed my focus to product. At Nx we’re
+            building Nx Cloud, a powerful platform for achieving fast, reliable
+            CI. It’s the most exciting thing I’ve worked on in my career.
+          </p>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>
